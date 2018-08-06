@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lilita+One|Luckiest+Guy|Oleo+Script+Swash+Caps:700|Yanone+Kaffeesatz:700"
         rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body class="container">
@@ -51,11 +52,14 @@
 
         </div>
     </section>
+    <!--Map Box-->
+    <section class="map-content">
+        <div id='map'></div>
+    </section>
 
-    <div id="map"></div>
+
+    <!--Section of selects-->
     <section>
-
-
         <div class="input-field col s12">
             <select>
                 <option value="" disabled selected>Choose your option</option>
@@ -90,11 +94,8 @@
     </footer>
     <!--Materialize min js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="../js/data.js"></script>
-    <!--Google Maps API KEY-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5heLHYLmh068Mv8YJEecY_2N77SDXOA8" async defer />
     <!--JS links-->
-
+    <script src="../js/data.js"></script>
     <script src="../js/searching.js"></script>
 
 </body>

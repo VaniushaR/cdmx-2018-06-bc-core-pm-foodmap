@@ -24,16 +24,11 @@
 // var userLocation = new findUserLoc();
 // console.log(userLocation);
 alert('conectado el data.js');
-
-const initialize = () => {
-  let center = new google.maps.LatLng(37.442, -122, 084058);
-  console.log(center);
-  let map = new google.maps.Map(document.getElementById('map'), {
-    center: center,
-    zoom: 13
-  });
-  console.log(map);
-};
-
-window.onload = initialize;
-// google.maps.event.addDomListener(window, 'load', initialize);
+//
+//MAP BOX
+mapboxgl.accessToken =
+  'pk.eyJ1IjoidmFuaXVzaGEiLCJhIjoiY2praXVwamlsMDBxbjNxcGp6ZmhhYzNxayJ9.p3_qpu0SpUbx200bOHPMEA';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v10'
+});

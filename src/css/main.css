@@ -93,8 +93,12 @@
     font-family: 'Luckiest Guy', cursive;
 }
 #map {
-    width:500px;
-    height:500px;
+    width:335px;
+    height:335px;
+    
+}
+.map-content {
+  background-color: rgba(252, 252, 252, 0.838);
 }
 /* paleta:
 color: #AC1D24; (red)
